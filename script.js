@@ -6,5 +6,9 @@ for(i = 1; i <= (16 * 16); i++){
     squareDiv.style.height = `${800/16}px`;
     squareDiv.style.border = `0.1px solid black`;
 
+    squareDiv.addEventListener('mouseenter',function(){
+        squareDiv.style.backgroundColor = 'black';
+    })
+
     container.appendChild(squareDiv);
 }
