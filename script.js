@@ -46,3 +46,19 @@ resetButton.addEventListener('click',function(){
         }
     }
 })
+
+function giveRandomColor(){
+    const COLOR_RED = '#ff0000';
+    const COLOR_ORANGE = '#FFA500';
+    const COLOR_YELLOW = '#FFFF00';
+    const COLOR_GREEN = '#00FF00';
+    const COLOR_BLUE = '#0000ff';
+    const COLOR_INDIGO = '#4B0082';
+    const COLOR_VIOLET = '#8F00FF';
+
+    const COLORS = [COLOR_RED,COLOR_ORANGE,COLOR_YELLOW,COLOR_GREEN,COLOR_BLUE,
+                    COLOR_INDIGO,COLOR_VIOLET];
+
+    let randomColor = COLORS[Math.floor(Math.random() * COLORS.length)];
+    return randomColor;
+}
