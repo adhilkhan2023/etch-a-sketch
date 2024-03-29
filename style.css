@@ -6,9 +6,11 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 20px;
 }
 
 .container{
@@ -16,4 +18,9 @@ body{
     flex-wrap: wrap;
     height: 800px;
     width: 800px;
+}
+
+.reset-button{
+    width: 66px;
+    height: 27px;
 }
